@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Buildora Pty Ltd</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+  <div id="root"></div>
+
+  <script type="text/javascript">
+    const e = React.createElement;
+
+    function BuildoraSite() {
+      return (
+        React.createElement('div', {className: "bg-white text-black font-sans"},
+          React.createElement('div', {className:"w-full flex flex-col items-center py-6 bg-white border-b border-gray-300"},
+            React.createElement('img', {
+              src:"https://drive.google.com/uc?export=view&id=1vkQhm1CwzZ4ZiAiun5n--18lzmq9rxGp",
+              className:"h-24 object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.3)]"
+            }),
+            React.createElement('p',{className:"text-blue-900 font-semibold mt-2"},"Your Satisfaction Is Our Priority")
+          ),
+
+          React.createElement('section',{className:"min-h-screen flex flex-col justify-center items-center text-center bg-blue-900 text-white px-6"},
+            React.createElement('h1',{className:"text-5xl font-bold mb-4"},"Buildora Pty Ltd"),
+            React.createElement('p',{className:"text-xl max-w-xl"},"Modern, affordable, and reliable home building solutions for families and homeowners."),
+            React.createElement('button',{className:"mt-6 px-6 py-3 rounded-2xl bg-yellow-400 text-black font-semibold shadow-xl hover:scale-105 transition"},"Get a Quote")
+          ),
+
+          React.createElement('section',{className:"py-20 px-6 text-center bg-white"},
+            React.createElement('h2',{className:"text-4xl font-bold text-blue-900 mb-6"},"About Buildora"),
+            React.createElement('p',{className:"max-w-3xl mx-auto text-lg"},
+              "We sell gadgets and other electronics at affordable prices. We deliver nationwide through trusted courier services, ensuring safe and fast delivery."
+            )
+          ),
+
+          React.createElement('section',{className:"py-20 px-6 text-center bg-white"},
+            React.createElement('h2',{className:"text-4xl font-bold text-blue-900 mb-10"},"Our Products"),
+            React.createElement('div',{className:"grid md:grid-cols-3 gap-6 max-w-5xl mx-auto"},
+              ['14eOeQQ3uDp_3ryutTKnBRt35q7QNjlFW','1o5SZZzwyo7J5k5E-nj-Uso_fUhUVPT5b','1_diFAgPmJdh0rt5oY3a_Vdi265GuHuag'].map(id =>
+                React.createElement('img',{
+                  key:id,
+                  src:`https://drive.google.com/uc?export=view&id=${id}`,
+                  className:"rounded-2xl h-48 w-full object-cover shadow"
+                })
+              )
+            )
+          ),
+
+          React.createElement('section',{className:"py-20 px-6 bg-blue-900 text-white text-center"},
+            React.createElement('h2',{className:"text-4xl font-bold mb-6"},"Contact Us"),
+            React.createElement('p',{className:"max-w-xl mx-auto mb-6"},"Ready to upgrade your tech? Message us now."),
+            React.createElement('a',{href:"https://wa.me/27648269848", className:"px-6 py-3 rounded-2xl bg-yellow-400 text-black font-semibold shadow-xl hover:scale-105 transition"},"WhatsApp Us"),
+            React.createElement('div',{className:"mt-6"},
+              React.createElement('a',{href:"https://www.tiktok.com/@buildora_construction?_r=1&_t=ZS-91SXsMz2r8z", className:"underline"},"Find us on TikTok")
+            )
+          )
+        )
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(BuildoraSite));
+  </script>
+</body>
+</html>
